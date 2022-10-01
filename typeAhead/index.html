@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TypeAhead</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js" defer></script>
+   
+    <script src="debounce.js" defer></script>
+    <script src="throttle.js" defer></script>
+    <script src="utility.js" defer></script>
 </head>
+
 <body>
 
     <div id="wrapper">
-        <input
-        id="typeahead"
-        type="text"
-        placeholder="Search for a term..."
-        autocomplete="off" />
-        <ul id="suggestions-list"></ul>
-       </div>
-       
-    
+        <div>
+            <h1>Using Debounce</h1>
+            <input id="debounce" type="text" placeholder="Search for a term..." autocomplete="off" />
+            <ul id="debounce-suggestions-list"></ul>
+        </div>
+        <div>
+            <h1>Using Throttle</h1>
+            <input id="throttle" type="text" placeholder="Search for a term..." autocomplete="off" />
+            <ul id="throttle-suggestions-list"></ul>
+        </div>
+
+
+    </div>
+
+
 </body>
+
 </html>
