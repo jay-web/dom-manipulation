@@ -1,0 +1,93 @@
+body {
+    /* width: 800px; */
+    margin: 50px auto;
+}
+button,
+textarea,
+input {
+  font-size: 16px;
+}
+textarea {
+  font-size: 16px;
+}
+input {
+  font-size: 16px;
+}
+#inputs {
+ width: 50%;
+ margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-basis: 60%;
+  align-self: flex-start;
+  background-color: lightgrey;
+  border: 2px solid black;
+  padding: 12px;
+  gap: 8px;
+  font-size: 18px;
+}
+.cancel-button {
+  flex-shrink: 0;
+  background: none;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 100%;
+  height: 18px;
+  width: 18px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0;
+  margin-left: 4px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.cancel-button:hover {
+  border-color: white;
+  transform: scale(1.2);
+}
+.message {
+  flex-grow: 1;
+  color: white;
+  margin: 0;
+  overflow-wrap: break-word;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+}
+.toast {
+
+   
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px;
+  border: 1px solid black;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 18px;
+  animation: fade-in 0.5s linear;
+}
+#toasts {
+  flex-basis: 25%;
+  margin: 0 auto;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.error-toast {
+  background-color: red;
+}
+
+.success-toast {
+  background-color: green;
+}
